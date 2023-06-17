@@ -1,4 +1,5 @@
 import React from "react";
+import BookItem from "./BookItem";
 
 const BookList = ({ books }) => {
 
@@ -7,7 +8,7 @@ const BookList = ({ books }) => {
             <h1>LIVROS PARA LER</h1>
             <ul>
                 {books.map((book) => (
-                <li key={book.id}></li>
+                    <li key={book.id}><BookItem book={book} /></li>
                 ))}
             </ul>
         </div>
